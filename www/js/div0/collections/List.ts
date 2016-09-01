@@ -4,6 +4,7 @@ class List<T> {
     private id:string;
     private items: Array<T>;
 
+    
     constructor(id) {
         if(id){
             this.id = id;
