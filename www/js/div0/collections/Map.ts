@@ -1,4 +1,5 @@
 /// <reference path="iterators/MapIterator.ts"/>
+/// <reference path="json/MapJsonEncoder.ts"/>
 class Map<T> {
     private id:string;
     private items: { [key: string]: T };
@@ -57,5 +58,9 @@ class Map<T> {
     }
     getId():string{
         return this.id;
+    }
+
+    getEncoder():MapJsonEncoder{
+        return new MapJsonEncoder(this);
     }
 }

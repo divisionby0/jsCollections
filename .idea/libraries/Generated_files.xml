@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="Generated files" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/www/js/div0/collections/json/MapJsonEncoder.js" />
+        <item url="file://$PROJECT_DIR$/www/js/div0/collections/iterators/ListIterator.js" />
+        <item url="file://$PROJECT_DIR$/www/js/div0/collections/Map.js" />
+        <item url="file://$PROJECT_DIR$/www/js/div0/collections/List.js" />
+        <item url="file://$PROJECT_DIR$/www/js/div0/collections/iterators/MapIterator.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/www/js/div0/collections/iterators/ListIterator.js" />
+      <root url="file://$PROJECT_DIR$/www/js/div0/collections/json/MapJsonEncoder.js" />
+      <root url="file://$PROJECT_DIR$/www/js/div0/collections/Map.js" />
+      <root url="file://$PROJECT_DIR$/www/js/div0/collections/List.js" />
+      <root url="file://$PROJECT_DIR$/www/js/div0/collections/iterators/MapIterator.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>

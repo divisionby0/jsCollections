@@ -1,4 +1,5 @@
 /// <reference path="iterators/MapIterator.ts"/>
+/// <reference path="json/MapJsonEncoder.ts"/>
 var Map = (function () {
     function Map(id) {
         this.keys = new Array();
@@ -44,6 +45,9 @@ var Map = (function () {
     };
     Map.prototype.getId = function () {
         return this.id;
+    };
+    Map.prototype.getEncoder = function () {
+        return new MapJsonEncoder(this);
     };
     return Map;
 })();
