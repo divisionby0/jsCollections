@@ -5,15 +5,16 @@ class MapJsonEncoder{
     constructor(collection:Map<any>) {
         this.collection = collection;
     }
-    encode():string{
+    public encode():string{
         var parsedObject:any = this.parseToObject(this.collection);
         var parsedJson:string = JSON.stringify(parsedObject);
         return parsedJson;
     }
 
-    parseToObject(collection:Map<any>):any{
+    private parseToObject(collection:Map<any>):any{
         var parsedObject:any = {};
         parsedObject['id']=collection.getId();
+        parsedObject['type']="Map";
 
         var keys:string[] = collection.getKeys();
 

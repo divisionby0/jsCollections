@@ -11,6 +11,7 @@ var MapJsonEncoder = (function () {
     MapJsonEncoder.prototype.parseToObject = function (collection) {
         var parsedObject = {};
         parsedObject['id'] = collection.getId();
+        parsedObject['type'] = "Map";
         var keys = collection.getKeys();
         for (var index in keys) {
             var currentKey = keys[index];
