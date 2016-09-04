@@ -16,7 +16,6 @@ var MapJsonDecoder = (function () {
         var id = dataObject["id"];
         var type = dataObject["type"];
         if (type == "Map") {
-            parentMap.setId(id);
             for (var key in dataObject) {
                 var value = dataObject[key];
                 var valueId = value["id"];
@@ -26,7 +25,12 @@ var MapJsonDecoder = (function () {
                     parentMap.add(key, this.parseObjectToMap(value, subMap));
                 }
                 else {
-                    parentMap.add(key, value);
+                    if (key === "id") {
+                        parentMap.setId(value);
+                    }
+                    else if (key != "type") {
+                        parentMap.add(key, value);
+                    }
                 }
             }
         }

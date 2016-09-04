@@ -14,6 +14,7 @@ class MapJsonDecoder{
         return this.rootMap;
     }
 
+
     private parseStringToMap(dataString:string, parentMap:Map<any>):void{
         var dataJson:any = JSON.parse(dataString);
         this.parseObjectToMap(dataJson, parentMap);
@@ -24,8 +25,8 @@ class MapJsonDecoder{
         var id:string = dataObject["id"];
         var type:string = dataObject["type"];
 
+
         if(type=="Map"){
-            parentMap.setId(id);
 
             for(var key in dataObject){
                 var value:any = dataObject[key];
@@ -37,7 +38,12 @@ class MapJsonDecoder{
                     parentMap.add(key, this.parseObjectToMap(value, subMap));
                 }
                 else{
-                    parentMap.add(key, value);
+                    if(key === "id"){
+                        parentMap.setId(value);
+                    }
+                    else if(key != "type"){
+                        parentMap.add(key, value);
+                    }
                 }
             }
         }
