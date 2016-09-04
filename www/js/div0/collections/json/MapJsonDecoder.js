@@ -21,9 +21,7 @@ var MapJsonDecoder = (function () {
                 var value = dataObject[key];
                 var valueId = value["id"];
                 var valueType = value["type"];
-                console.log("Key is: " + key + "  value: " + value + "  valueType:" + valueType);
                 if (key != "id" && key != "type" && valueType == "Map") {
-                    console.log("creating sub map... by key " + key);
                     var subMap = new Map(valueId);
                     parentMap.add(key, this.parseObjectToMap(value, subMap));
                 }

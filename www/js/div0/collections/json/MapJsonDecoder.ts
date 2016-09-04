@@ -32,10 +32,7 @@ class MapJsonDecoder{
                 var valueId:string = value["id"];
                 var valueType:string = value["type"];
 
-                console.log("Key is: "+key+"  value: "+value+"  valueType:"+valueType);
-
                 if(key!="id" && key!="type" && valueType=="Map"){
-                    console.log("creating sub map... by key "+key);
                     var subMap:Map<any> = new Map<any>(valueId);
                     parentMap.add(key, this.parseObjectToMap(value, subMap));
                 }
