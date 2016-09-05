@@ -21,6 +21,15 @@ var Map = (function () {
         // remove key
         this.removeKey(key);
     };
+    Map.prototype.update = function (key, newValue) {
+        var value = this.get(key);
+        if (value != undefined && value != null) {
+            this.items[key] = newValue;
+        }
+        else {
+            console.error('Map error. No such element by key ' + key);
+        }
+    };
     Map.prototype.clear = function () {
         this.keys = new Array();
         this.items = {};

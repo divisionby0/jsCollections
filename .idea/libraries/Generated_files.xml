@@ -5,6 +5,7 @@
         <item url="file://$PROJECT_DIR$/www/js/div0/collections/iterators/ListIterator.js" />
         <item url="file://$PROJECT_DIR$/www/js/div0/collections/json/MapJsonEncoder.js" />
         <item url="file://$PROJECT_DIR$/www/js/div0/collections/json/MapJsonDecoder.js" />
+        <item url="file://$PROJECT_DIR$/www/js/div0/collections/iterators/MapIterator.js" />
         <item url="file://$PROJECT_DIR$/www/js/div0/collections/Map.js" />
         <item url="file://$PROJECT_DIR$/www/js/div0/collections/List.js" />
         <item url="file://$PROJECT_DIR$/www/js/div0/collections/iterators/MapIterator.js" />
@@ -14,6 +15,7 @@
       <root url="file://$PROJECT_DIR$/www/js/div0/collections/json/MapJsonEncoder.js" />
       <root url="file://$PROJECT_DIR$/www/js/div0/collections/iterators/ListIterator.js" />
       <root url="file://$PROJECT_DIR$/www/js/div0/collections/json/MapJsonDecoder.js" />
+      <root url="file://$PROJECT_DIR$/www/js/div0/collections/iterators/MapIterator.js" />
       <root url="file://$PROJECT_DIR$/www/js/div0/collections/Map.js" />
       <root url="file://$PROJECT_DIR$/www/js/div0/collections/List.js" />
       <root url="file://$PROJECT_DIR$/www/js/div0/collections/iterators/MapIterator.js" />

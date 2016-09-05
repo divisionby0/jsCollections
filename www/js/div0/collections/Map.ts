@@ -5,8 +5,6 @@ class Map<T> {
     private items: { [key: string]: T };
     private keys:string[] = new Array();
 
-
-    
     constructor(id) {
         if(id){
             this.id = id;
@@ -29,6 +27,16 @@ class Map<T> {
 
         // remove key
         this.removeKey(key);
+    }
+
+    update(key: string, newValue:T): void {
+        var value:any = this.get(key);
+        if(value!=undefined && value!=null){
+            this.items[key] = newValue;
+        }
+        else{
+            console.error('Map error. No such element by key '+key);
+        }
     }
 
     clear():void{
