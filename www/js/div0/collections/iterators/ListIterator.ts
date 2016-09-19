@@ -10,7 +10,7 @@ class ListIterator{
 
     hasNext():boolean{
         var nextIndex:number = this.counter+1;
-        if(nextIndex < this.collection.size()-1){
+        if(nextIndex < this.collection.size()){
             return true;
         }
         else{

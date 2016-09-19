@@ -6,7 +6,7 @@ var ListIterator = (function () {
     }
     ListIterator.prototype.hasNext = function () {
         var nextIndex = this.counter + 1;
-        if (nextIndex < this.collection.size() - 1) {
+        if (nextIndex < this.collection.size()) {
             return true;
         }
         else {
